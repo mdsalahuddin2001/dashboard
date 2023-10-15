@@ -56,9 +56,9 @@ const DefaultLayout = ({ children }) => {
   const isAuthenticated = useAuth();
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      navigate("/auth/login", { replace: true });
-    }
+    // if (!isAuthenticated) {
+    //   navigate("/auth/login", { replace: true });
+    // }
   }, [isAuthenticated, navigate]);
 
   return (
